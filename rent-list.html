@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/Logo.png" type="image/x-icon">
+    <title>Feddersen</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/scss/dist/style.css">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="fbook fanimation">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="f-header">
+        <div class="fheader container col-10 col-sm-10 col-md-8 d-flex justify-content-between">
+            <a class="f-logout" href="index.html">
+                <svg class="f-back" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                    style="fill: #BDA5F6;">
+                    <path
+                        d="M19.002 3h-14c-1.103 0-2 .897-2 2v4h2V5h14v14h-14v-4h-2v4c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5c0-1.103-.898-2-2-2z">
+                    </path>
+                    <path d="m11 16 5-4-5-4v3.001H3v2h8z"></path>
+                </svg>
+            </a>
+            <span class="f-brand">Feddersen</span>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <section class="f-navigation container col-10 col-sm-10 col-md-8 d-flex justify-content-center gap-5">
+        <a href="book-list.html" class="f-card">
+            <h3 class="f-navigation__title">Livros</h3>
+
+            <div class="fwave-effect fwave1-effect"></div>
+            <div class="fwave-effect fwave2-effect"></div>
+            <div class="fwave-effect fwave3-effect"></div>
+            <div class="fwave-effect fwave4-effect"></div>
+        </a>
+
+        <a class="f-card active">
+            <h3 class="f-navigation__title">Livros Alugados</h3>
+
+            <div class="fwave-effect fwave1-effect"></div>
+            <div class="fwave-effect fwave2-effect"></div>
+            <div class="fwave-effect fwave3-effect"></div>
+            <div class="fwave-effect fwave4-effect"></div>
+        </a>
+    </section>
+
+    <!-- Form -->
+    <main class="f-main container col-10 col-sm-10 col-md-8">
+        <section class="f-actions d-flex justify-content-between gap-5">
+            <input class="f-input-search" type="text" placeholder="Buscar RA...">
+            <button id="addBook" class="f-btn-primary">Adicionar Aluguel</button>
+        </section>
+
+        <section class="f-table table-responsive">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>RA. aluno</th>
+                        <th>Qtd. alugada</th>
+                        <th>
+                            <button class="f-btn-primary f-btn-primary__sm addBook">
+                                <i class='bx bx-plus'></i>
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Livro 1</td>
+                        <td>Autor 1</td>
+                        <td>00011</td>
+                        <td>2</td>
+                        <td class="acctions d-flex gap-4">
+                            <i class="bx bxs-trash-alt acctions__icon trashFeedback"></i>
+                            <i class="bx bxs-edit acctions__icon editFeedback"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Livro 2</td>
+                        <td>Autor 2</td>
+                        <td>00022</td>
+                        <td>2</td>
+                        <td class="acctions d-flex gap-4">
+                            <i class="bx bxs-trash-alt acctions__icon trashFeedback"></i>
+                            <i class="bx bxs-edit acctions__icon editFeedback"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Livro 3</td>
+                        <td>Autor 3</td>
+                        <td>00033</td>
+                        <td>2</td>
+                        <td class="acctions d-flex gap-4">
+                            <i class="bx bxs-trash-alt acctions__icon trashFeedback"></i>
+                            <i class="bx bxs-edit acctions__icon editFeedback"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <span>Desenvolvido por <a target="_blank" href="https://gmotalinks.vercel.app/">Guilherme Mota</a>. 2021</span>
+    </footer>
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- ScrollRevealJS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- My Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

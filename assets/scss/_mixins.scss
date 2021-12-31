@@ -1,0 +1,72 @@
+@import 'variables';
+
+// ============== GLOBAL MIXINS =================
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin full-screen {
+    height: 100%;
+    width: 100%;
+}
+
+@mixin f-title {
+    background: -webkit-linear-gradient(89.82deg, #785BD1 0.16%, #d8c8ff
+    100%);
+    background: linear-gradient(89.82deg, #785BD1 0.16%, #d3c1ff
+    100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
+    font-size: $f4;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 2.813rem;
+        height: .25rem;
+        margin-top: 5px;
+        background: -webkit-linear-gradient(89.82deg, #785BD1 0.16%, #d8c8ff
+        100%);
+        background:  linear-gradient(89.82deg, #785BD1 0.16%, #d3c1ff
+        100%);
+    }
+}
+
+@mixin input-group {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+}
+
+@mixin f-button-primary {
+    background: $bg-color-primary;
+    color: $white-color;
+    padding: 8px 1rem;
+    transition: .3s;
+
+    &:hover {
+        background: $bg-color-primary-hover;
+    }
+}
+
+@mixin f-feedback {
+    position: absolute;
+    top: 0;
+    left: 2.8rem;
+    padding: 8px 1rem;
+    border-radius: 4.8px;
+
+    color: $text-color;
+    background: $white-color;
+    box-shadow: 0 0px 4px 4px rgba(0, 0, 0, 0.02);
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: $f1;
+
+    z-index: 10;
+    animation: fadeInFeedback 0.3s;
+}

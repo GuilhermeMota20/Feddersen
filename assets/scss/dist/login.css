@@ -1,0 +1,95 @@
+.flogin {
+  overflow: hidden;
+}
+.flogin__main {
+  height: 100vh;
+  width: 100vw;
+}
+.flogin__left {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(89.82deg, #785BD1 0.16%, #8F70EF 94.34%);
+}
+.flogin__left__content {
+  height: 100%;
+  width: 100%;
+  background-image: url(/assets/img/bg-library.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  color: #ffffff;
+}
+.flogin__left__content__title {
+  font-weight: bold;
+  font-size: 36px;
+}
+.flogin__left__content__description {
+  font-weight: medium;
+}
+.flogin__right {
+  height: 100%;
+  width: 100%;
+}
+.flogin__right__content {
+  height: 100%;
+  width: 100%;
+  padding: 0 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flogin__right__content__input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  width: 100%;
+}
+.flogin__right__content__input-group .flogin__label {
+  font-size: 14px;
+  font-weight: bold;
+}
+.flogin__right__content__input-group .flogin__input {
+  width: 100%;
+  padding: 8px 20px;
+  border: 1px solid #E6E6F0;
+  background: #FBFBFB;
+  box-shadow: 0 0px 4px 4px rgba(0, 0, 0, 0.02);
+}
+.flogin__right__content .flogin__link {
+  width: 100%;
+}
+.flogin__right__content .f-btn-primary {
+  background: linear-gradient(89.82deg, #785BD1 0.16%, #8F70EF 94.34%);
+  color: #ffffff;
+  padding: 8px 0;
+  transition: 0.5s;
+  width: 100%;
+  margin-top: 4rem;
+}
+.flogin__right__content .f-btn-primary:hover {
+  background: linear-gradient(89.09deg, #785BD1 0.78%, #5D43AB 100%);
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .flogin__left {
+    display: none;
+  }
+  .flogin__left__content {
+    padding: 0;
+  }
+  .flogin__right__content {
+    padding: 0 15%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .flogin__left__content {
+    padding: 0 1rem;
+  }
+}

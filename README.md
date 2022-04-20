@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Proffy" title="Proffy" src="./assets/img/logo.png" width="40" /> 
+    <img alt="logo" title="logo" src="./assets/img/Logo.png" width="40" /> 
     <strong>Feddersen</strong>
 </h1>
 
